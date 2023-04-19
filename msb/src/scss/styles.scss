@@ -1,2 +1,75 @@
-// Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+// override bootstrap
+@import "variables";
+
+// import bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: $font-family;
+}
+
+.navbar {
+    background-color: $background-grey;
+}
+
+#hero {
+	background:
+		linear-gradient(90deg, #33333388 0%, #33333388 100%),
+		url('../public/hero-img.png');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+	color: $white;
+}
+
+#info {
+    background:
+		linear-gradient(90deg, #33333388 0%, #33333388 100%),
+		url('../public/info.png');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+	color: $white;
+}
+
+.btn-primary {
+    background-color: $red;
+    color: $white;
+    border-color: $red;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: $white;
+}
+
+i {
+    margin-left: 10px;
+}
+
+.news-heading {
+    background-color: $red;
+}
+
+.news-heading h1 {
+    color: $white;
+    padding: 10px;
+}
+
+#info i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+}

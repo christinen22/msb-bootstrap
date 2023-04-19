@@ -3,13 +3,78 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>MSB</title>
   </head>
+
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="public/msb-logo.png" alt="Logo" class="d-inline-block align-text-center">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Hem</a>
+            <a class="nav-link" href="#">Nyheter</a>
+            <a class="nav-link" href="#">Orosanmälan</a>
+            <a class="nav-link" href="#">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-8 d-flex flex-column justify-content-center align-items-start order-2 order-md-1 py-3">
+              <h1>Välkommen till MSB.</h1>
+              <p>Ett säkrare samhälle i en föränderlig värld.</p>
+              <button type="button" class="btn btn-primary"><a href="https://www.msb.se/sv/om-msb/">Om oss</a><i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="news-heading">
+            <h1>Nyheter</h1>
+        </div>
+          <div class="row gy-4" id="news">
+            <div class="news">
+            <img src="public/news.png">
+              <div class="content px-3 py-2">
+                <h2>April</h2>
+                <p>I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd. I april faller det många träd.</p>
+                <p>Det är viktigt för oss att ni meddelar oss vid eventuella trädtrillningar för att förhindra samhällspåverkan.</p>
+                <button type="button" class="btn btn-primary"><a href="#">Läs mer</a><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-8 d-flex flex-column justify-content-center align-items-start order-2 order-md-1 py-3">
+              <p><i class="fa-regular fa-lightbulb"></i>År 2022 föll 254 träd bara i Skåne. Av dessa påverkade ca 75% infrastrukturen. </p>
+              <p>Kontakta oss när du ser att risken för trädtrillning finns.</p>
+              <button type="button" class="btn btn-primary"><a href="#">Läs mer</a><i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <script src="https://kit.fontawesome.com/72ede8dd53.js" crossorigin="anonymous"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
