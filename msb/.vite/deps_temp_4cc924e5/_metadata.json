@@ -1,0 +1,13 @@
+{
+  "hash": "e2fb1d7d",
+  "browserHash": "6e57e3fa",
+  "optimized": {
+    "bootstrap/dist/js/bootstrap.js": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.js",
+      "file": "bootstrap_dist_js_bootstrap__js.js",
+      "fileHash": "6a4af50f",
+      "needsInterop": true
+    }
+  },
+  "chunks": {}
+}
