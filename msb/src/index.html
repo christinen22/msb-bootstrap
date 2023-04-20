@@ -84,31 +84,122 @@
       <section class="tree-form">
         <h2>Orosanmälan trädtrillning</h2>
         <form>
-            <ul>
-                <li>
-                    <label for="name">Förnamn</label>
-                    <input id="firstname" name="firstname" type="text" placeholder="Förnamn" required autofocus>
-                </li>
-                <li>
-                    <label for="lastname">Efternamn</label>
-                    <input id="lastname" name="lastname" type="text" placeholder="Efternamn" required autofocus>
-                </li>
-                <li>
-                    <label for="phone">Telefon</label>
-                    <input id="phone" name="phone" type="text" placeholder="Telefon" required autofocus>
-                </li>
-                <li>
-                    <label for="position">Trädets position</label>
-                    <input id="position" name="position" type="text" placeholder="Position" required autofocus>
-                </li>
-                <li>
-                    <label for="message">Meddelande</label>
-                    <input id="message" name="message" type="text" placeholder="Meddelande" required autofocus>
-                </li>
-            </ul>
-            <button type="button" class="btn btn-primary"><a href="#">Skicka</a><i class="fa-solid fa-arrow-right"></i></button>
+          <div class="mb-3">
+            <label for="firstname" class="form-label">Förnamn</label>
+            <input type="text" class="form-control" id="firstname" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Efternamn</label>
+            <input type="text" class="form-control" id="lastname" placeholder="">
+          </div>      
+          <div class="mb-3">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="text" class="form-control" id="phone" placeholder="">
+          </div> 
+          <div class="mb-3">
+            <label for="city" class="form-label">Kommun</label>
+            <input type="text" class="form-control" id="city" placeholder="">
+          </div>      
+          <div class="mb-3">
+            <label for="message" class="form-label">Meddelande</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary"><a href="#">Skicka</a><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="form-img">
+          <img src="public/tree.png" alt="graphic tree">
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h1>Har du frågor om arbetet vi bedriver?</h1>
+        <h2>Fyll i dina kontaktuppgifter nedan så återkopplar vi.</h2>
+        <div class="contact-img">
+          <img src="public/circles.png" alt="graphic circles">
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="firstname" class="form-label">Förnamn</label>
+            <input type="text" class="form-control" id="firstname" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Efternamn</label>
+            <input type="text" class="form-control" id="lastname" placeholder="">
+          </div>      
+          <div class="mb-3">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="text" class="form-control" id="phone" placeholder="">
+          </div> 
+          <div class="mb-3">
+            <label for="email" class="form-label">Epost</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>      
+          <div class="mb-3">
+            <label for="message" class="form-label">Meddelande</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary"><a href="#">Skicka</a><i class="fa-solid fa-arrow-right"></i></button>
         </form>
       </section>
+
+      <section class="chat-box">
+        <div class="chat-images">
+        <img src="public/woman-chatt.png" alt="female">
+        <img src="public/man-chatt.png" alt="male">
+        </div>
+        <div class="chat-p">
+        <p>Vi finns tillgängliga i chatt vardagar 8-17</p>
+        </div>
+        <button type="button" class="btn btn-secondary"><a href="#">Chatt</a><i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+
+      <footer id="contact">
+        <div class="footer-header">
+            <img class="footer-logo" src="public/msb-logo.png" alt="msb-logo">
+            <img src="public/lines-gray.png" alt="graphic lines">
+        </div>
+        <div class="footer-box">
+        <div class="contact-info">
+            <h1 class="footer-h">
+                Kontakta MSB
+            </h1>
+            <p class="phone-p">
+                Telefonnummer
+                <br>
+                0771-240 240
+            </p>
+            <p class="email-p">
+                E-post
+                <br>
+                registrator@msb.se
+            </p>
+            <p class="post-p">
+                Postadress
+                <br>
+                651 82 Karlstad
+            </p>
+            <p class="org-p">
+                Organisationsnummer
+                <br>
+                202100-5984
+            </p>
+        </div>
+        <div class="social-media">
+        <h1 class="footer-h2">
+            MSB i sociala medier
+        </h1>
+  
+            <p><i class="fa-brands fa-facebook"></i><a href="#">Facebook</a></p>
+            <p><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></p>
+            <p><i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</i></a></p>
+            <p><i class="fa-brands fa-twitter"></i><a href="#">Twitter</a></p>
+            <p><i class="fa-brands fa-youtube"></i><a href="#">Youtube</a></p>
+        </div>
+        </div>
+        <p class="footer-p">Ett säkrare samhälle i en föränderlig värld.</p>
+        
+    </footer>
+      
       
 
     </main>

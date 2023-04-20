@@ -12,6 +12,10 @@ body {
     background-color: $background-grey;
 }
 
+.navbar-toggler {
+    border: transparent;
+}
+
 #hero {
 	background:
 		linear-gradient(90deg, #33333388 0%, #33333388 100%),
@@ -47,7 +51,7 @@ body {
     max-width: 18rem;
 }
 
-.btn-primary a {
+.btn-primary a, .btn-secondary a {
     text-decoration: none;
     color: $white;
 }
@@ -85,26 +89,116 @@ i {
     margin: 10px;
 }
 
-.tree-form ul {
+.tree-form ul, .contact-form ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
-.tree-form li {
+.tree-form li, .contact-form li {
     margin: 0px 50px 0px 50px;
     padding: 10px;
 }
 
-.tree-form input {
+.tree-form input, .contact-form input {
     border-radius: 10px;
 }
 
-.tree-form {
-    text-align: center;
+.tree-form, .contact-form {
     border-left: 5px solid $red;
+    padding: 15px;
 }
 
-#message {
-    height: 5rem;
+.tree-form h2, .contact-form h2 {
+    margin-bottom: 3rem;
+}
+
+.form-img {
+    margin-bottom: 50px;
+}
+
+.contact-img {
+    margin: 30px 0px 30px 0px;
+}
+
+.form-img {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form h1, .contact-form h2 {
+    max-width: 500px;
+}
+
+.chat-box {
+    background:
+		linear-gradient(90deg, #33333388 0%, #CC0000 100%),
+		url('../public/hero-img.png');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	color: $white;
+}
+
+.chat-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chat-box img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.chat-box p {
+    padding: 20px;
+}
+
+.btn-secondary {
+    background-color: $pink;
+    color: $white;
+    border-color: $pink;
+    max-width: 18rem;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: $dark-grey;
+    padding: 20px;
+    color: $white;
+}
+
+footer a {
+    text-decoration: none;
+    color: $white;
+}
+
+footer i {
+    color: $black;
+    margin-right: 10px;
+}
+
+.footer-p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-lines {
+    align-self: flex-end;
+}
+
+.social-media {
+    margin-top: 5rem;
 }
