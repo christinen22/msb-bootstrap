@@ -89,6 +89,10 @@ i {
     margin: 10px;
 }
 
+#side-info img {
+    padding: 30px;
+}
+
 .tree-form ul, .contact-form ul {
     list-style: none;
     display: flex;
@@ -119,6 +123,8 @@ i {
 
 .contact-img {
     margin: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .form-img {
@@ -188,6 +194,7 @@ footer i {
 .footer-p {
     text-align: center;
     font-weight: bold;
+ 
 }
 
 .footer-header {
