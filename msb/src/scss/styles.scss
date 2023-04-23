@@ -8,6 +8,7 @@ body {
     font-family: $font-family;
 }
 
+
 .navbar {
     background-color: $background-grey;
 }
@@ -19,7 +20,7 @@ body {
 #hero {
 	background:
 		linear-gradient(90deg, #33333388 0%, #33333388 100%),
-		url('../public/hero-img.png');
+		url('../hero-img.png');
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
@@ -49,6 +50,7 @@ body {
     color: $white;
     border-color: $red;
     max-width: 18rem;
+    --bs-btn-hover-bg: #CC0000;
 }
 
 .btn-primary a, .btn-secondary a {
@@ -60,11 +62,12 @@ i {
     margin-left: 10px;
 }
 
-.news-heading {
+#news-heading {
     background-color: $red;
+
 }
 
-.news-heading h1 {
+#news-heading h2 {
     color: $white;
     padding: 10px;
 }
@@ -139,7 +142,7 @@ i {
 .chat-box {
     background:
 		linear-gradient(90deg, #33333388 0%, #CC0000 100%),
-		url('../public/hero-img.png');
+		url('../hero-img.png');
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;

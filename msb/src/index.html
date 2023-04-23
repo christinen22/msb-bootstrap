@@ -10,7 +10,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="public/msb-logo.png" alt="Logo" class="d-inline-block align-text-center">
+          <img src="/msb-logo.png" alt="Logo" class="d-inline-block align-text-center">
         </a>
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,33 +19,33 @@
   
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Hem</a>
-            <a class="nav-link" href="#">Nyheter</a>
-            <a class="nav-link" href="#">Orosanmälan</a>
-            <a class="nav-link" href="#">Kontakt</a>
+            <a class="nav-link active" aria-current="page" href="#news-heading">Hem</a>
+            <a class="nav-link" href="#news">Nyheter</a>
+            <a class="nav-link" href="#tree-form">Orosanmälan</a>
+            <a class="nav-link" href="#contact-form">Kontakt</a>
           </div>
         </div>
       </div>
     </nav>
 
     <main>
-      <section id="hero">
+      <div id="hero">
         <div class="container">
           <div class="row">
             <div class="col-md-4 col-lg-8 d-flex flex-column justify-content-center align-items-start order-2 order-md-1 py-3">
               <h1>Välkommen till MSB.</h1>
               <p>Ett säkrare samhälle i en föränderlig värld.</p>
-              <button type="button" class="btn btn-primary"><a href="https://www.msb.se/sv/om-msb/">Om oss</a><i class="fa-solid fa-arrow-right"></i></button>
+              <button type="button" class="btn btn-primary" onclick="location.href='https://www.msb.se/sv/om-msb/'">Om oss<i class="fa-solid fa-arrow-right"></i></button>
 
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="py-5">
         <div class="container">
-          <div class="news-heading">
-            <h1>Nyheter</h1>
+          <div id="news-heading">
+            <h2>Nyheter</h2>
         </div>
           <div class="row gy-4" id="news">
             <div class="news">
@@ -58,9 +58,10 @@
               </div>
             </div>
         </div>
+        </div>
       </section>
 
-      <section  id="info">
+      <div  id="info">
         <div class="container">
           <div class="row">
             <div class="col-md-4 col-lg-8 d-flex flex-column justify-content-center align-items-start order-2 order-md-1 py-3">
@@ -71,27 +72,27 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="side-info" class="py-5">
+      <div id="side-info" class="py-5">
         <div class="container">
-          <img src="public/windtree.png" alt="graphic tree">
+          <img src="windtree.png" alt="graphic tree">
           <p>Vid kraftig blåst finns det risk för fallande träd som kan påverka infrastrukturen.</p>        
-          <button type="button" class="btn btn-primary"><a href="#">Lämna din orosanmälan</a><i class="fa-solid fa-arrow-right"></i></button>
-          <button type="button" class="btn btn-primary"><a href="#">Övriga frågor?</a><i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='#tree-form'">Lämna din orosanmälan<i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='#contact-form'">Övriga frågor?<i class="fa-solid fa-arrow-right"></i></button>
         </div>
-      </section>
+      </div>
 
-      <section class="tree-form">
+      <section id="tree-form">
         <h2>Orosanmälan trädtrillning</h2>
         <form>
           <div class="mb-3">
             <label for="firstname" class="form-label">Förnamn</label>
-            <input type="text" class="form-control" id="firstname" placeholder="">
+            <input type="text" class="form-control" id="first-name" placeholder="">
           </div>
           <div class="mb-3">
             <label for="lastname" class="form-label">Efternamn</label>
-            <input type="text" class="form-control" id="lastname" placeholder="">
+            <input type="text" class="form-control" id="last-name" placeholder="">
           </div>      
           <div class="mb-3">
             <label for="phone" class="form-label">Telefon</label>
@@ -102,21 +103,21 @@
             <input type="text" class="form-control" id="city" placeholder="">
           </div>      
           <div class="mb-3">
-            <label for="message" class="form-label">Meddelande</label>
+            <label for="exampleFormControlTextarea1">Meddelande</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <button type="button" class="btn btn-primary"><a href="#">Skicka</a><i class="fa-solid fa-arrow-right"></i></button>
         </form>
         <div class="form-img">
-          <img src="public/tree.png" alt="graphic tree">
+          <img src="/tree.png" alt="graphic tree">
         </div>
       </section>
 
-      <section class="contact-form">
-        <h1>Har du frågor om arbetet vi bedriver?</h1>
-        <h2>Fyll i dina kontaktuppgifter nedan så återkopplar vi.</h2>
+      <section id="contact-form">
+        <h2>Har du frågor om arbetet vi bedriver?</h2>
+        <p>Fyll i dina kontaktuppgifter nedan så återkopplar vi.</p>
         <div class="contact-img">
-          <img src="public/circles.png" alt="graphic circles">
+          <img src="/circles.png" alt="graphic circles">
         </div>
         <form>
           <div class="mb-3">
@@ -136,30 +137,30 @@
             <input type="email" class="form-control" id="email" placeholder="">
           </div>      
           <div class="mb-3">
-            <label for="message" class="form-label">Meddelande</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea2">Meddelande</label>
+            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
           </div>
           <button type="button" class="btn btn-primary"><a href="#">Skicka</a><i class="fa-solid fa-arrow-right"></i></button>
         </form>
       </section>
 
-      <section class="chat-box">
+      <div class="chat-box">
         <div class="chat-images">
-        <img src="public/woman-chatt.png" alt="female">
-        <img src="public/man-chatt.png" alt="male">
+        <img src="/woman-chatt.png" alt="female">
+        <img src="/man-chatt.png" alt="male">
         </div>
         <div class="chat-p">
         <p>Vi finns tillgängliga i chatt vardagar 8-17</p>
         </div>
         <button type="button" class="btn btn-secondary"><a href="#">Chatt</a><i class="fa-solid fa-arrow-right"></i></button>
-      </section>
+      </div>
 
       <footer id="contact">
         <div class="footer-header">
           <a class="navbar-brand" href="#">
-            <img src="public/msb-logo.png" alt="Logo" class="d-inline-block align-text-center">
+            <img src="/msb-logo.png" alt="Logo" class="d-inline-block align-text-center">
           </a>
-            <img class="lines-img" src="public/lines-gray.png" alt="graphic lines">
+            <img class="lines-img" src="/lines-gray.png" alt="graphic lines">
         </div>
         <div class="footer-box">
         <div class="contact-info">
@@ -194,7 +195,7 @@
   
             <p><i class="fa-brands fa-facebook"></i><a href="#">Facebook</a></p>
             <p><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></p>
-            <p><i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</i></a></p>
+            <p><i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</a></p>
             <p><i class="fa-brands fa-twitter"></i><a href="#">Twitter</a></p>
             <p><i class="fa-brands fa-youtube"></i><a href="#">Youtube</a></p>
         </div>
